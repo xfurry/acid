@@ -32,7 +32,7 @@ TRUNCATE creature_ai_texts;
 -- ===========================================
 -- Set Mangos ACID Release Version Information
 -- ===========================================
-UPDATE db_version SET `creature_ai_version` = 'ACID 4.0.0 \'ALPHA DEVELOPMENT\' - Full Release for MaNGOS (4.3.4 Client)';
+UPDATE db_version SET `creature_ai_version` = 'ACID 4.0.0 \'ALPHA DEVELOPMENT\' - Full Release for CMaNGOS (4.3.4 Client)';
 
 
 
@@ -1483,8 +1483,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Benjamin Foxworthy (46983)
 -- Billy Maclure (247)
 -- Blackrock Battle Worg (49871)
--- Blackrock Invader (42937)
--- Blackrock Spy (49874)
+-- Blackrock Invader 
+('4293701','42937','4','0','10','32','0','0','0','0','1','-1','-2','-3','1','-2','-3','-4','1','-1','-3','-4','Blackrock Invader - Random Say on Aggro'),
+-- Blackrock Spy (4.3.4 Official Data)
+('4987401','49874','4','0','10','32','0','0','0','0','1','-1','-2','-3','1','-2','-3','-4','1','-1','-3','-4','Blackrock Spy - Random Say on Aggro'),
 -- Bo (797)
 -- Bodyguard (6866)
 -- Bradford Bridenbecker (22985)
@@ -1529,7 +1531,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Flik's Frog (14866)
 -- Forest Spider (30)
 -- Gerard Tiller (255)
--- Goblin Assassin (50039)
+-- Goblin Assassin
+('5003901','50039','4','0','10','32','0','0','0','0','1','-5','-6','-7','1','-6','-7','-8','1','-5','-7','-8','Goblin Assassin - Random Say on Aggro'),
 -- Godric Rothgar (1213)
 -- Goldtooth (327)
 -- Gramma Stonefield (248)
@@ -1544,7 +1547,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Homer Stonefield (894)
 -- Hornsley (14868)
 -- Ian Jolly (50526)
--- Injured Stormwind Infantry (50047)
+-- Injured Stormwind Infantry
+('5004701','50047','11','0','100','0','0','0','0','0','11','93096','0','1','0','0','0','0','0','0','0','0','Injured Stormwind Infantry - Cast Sparkle Aura on Spawn'),
+-- Injured Stormwind Infantry Dummy
+('5037801','50378','11','0','100','0','0','0','0','0','11','93450','0','1','0','0','0','0','0','0','0','0','Injured Stormwind Infantry Dummy - Cast Given Right Click Instruction on Spawn'),
 -- James Clark (13159)
 -- Janos Hammerknuckle (78)
 -- Jason Mathers (383)
@@ -1604,6 +1610,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Noblegarden Rabbit (32781)
 -- Noblegarden Vendor (32836)
 -- Northshire Peasant (11260)
+-- Northshire Vineyards Fire Trigger
+('4294001','42940','11','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Northshire Vineyards Fire Trigger - Set Phase 1 on Spawn'),
+('4294002','42940','8','5','100','0','80199','-1','0','0','33','42940','1','0','11','80223','0','1','28','0','80175','0','Northshire Vineyards Fire Trigger - On Spray Water Spellhit Quest 26391 Credit and Cast Steam and Remove Vineyard Fire Aura'),
+('4294003','42940','8','5','100','0','80199','-1','0','0','41','5000','0','0','23','1','0','1','28','0','80175','0','Northshire Vineyards Fire Trigger - On Spray Water Spellhit Delayed Despawn and Set Phase 2'),
 -- Pa Maclure (250)
 -- Palomino (5406)
 -- Pinto (5405)
@@ -1638,7 +1648,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stonetusk Boar (113)
 -- Stormwind Army Registrar (42216)
 -- Stormwind Guard (1423)
--- Stormwind Infantry (49869)
+-- Stormwind Infantry
+('4986901','49869','1','0','50','1','10000','30000','15000','30000','5','22','0','0','0','0','0','0','0','0','0','0','Stormwind Infantry - Shout Emote OOC'),
 -- Stormwind Rat (49540)
 -- Supervisor Raelen (10616)
 -- Surena Caledon (881)
@@ -1652,8 +1663,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Toddrick (3935)
 -- Tomas (1430)
 -- Tommy Joe Stonefield (252)
--- Training Dummy
-('4454801','44548','8','0','100','0','20271','-1','0','0','33','44175','1','0','33','44420','1','0','0','0','0','0','Training Dummy - On Judgement Spellhit Quest Credit 26918 (44420 Is Workaround Until Core Support Exists)');
+-- Training Dummy 
+('4454801','44548','8','0','100','0','20271','-1','0','0','33','44175','1','0','33','44420','1','0','0','0','0','0','Training Dummy - On Judgement Spellhit (Quest 26918 Credit) - (44420 Is Workaround Until Core Support Exists)'),
+('4454802','44548','8','0','100','0','100','-1','0','0','33','44175','1','0','0','0','0','0','0','0','0','0','Training Dummy - On Charge Spellhit (Quest 26913 Credit)'),
+('4454803','44548','8','0','100','0','348','-1','0','0','33','44175','1','0','0','0','0','0','0','0','0','0','Training Dummy - On Immolate Spellhit (Quest 26914 Credit)'),
+('4454804','44548','8','0','100','0','56641','-1','0','0','33','44175','1','0','0','0','0','0','0','0','0','0','Training Dummy - On Steady Shot Spellhit (Quest 26917 Credit)'),
+('4454805','44548','8','0','100','0','5143','-1','0','0','33','44175','1','0','0','0','0','0','0','0','0','0','Training Dummy - On Arcane Missiles Spellhit (Quest 26916 Credit)'),
+('4454806','44548','8','0','100','0','2098','-1','0','0','33','44175','1','0','0','0','0','0','0','0','0','0','Training Dummy - On Eviscerate Spellhit (Quest 26915 Credit)'),
 -- Veldan Lightfoot (896)
 -- William Pestle (253)
 -- Wilson (43291)
@@ -1725,7 +1741,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stormwind Soldier (42096)
 -- Sylannia (14844)
 -- Theocritus (313)
--- Wounded Trainee (44564)
+-- Wounded Trainee
+('4456401','44564','8','0','100','0','2061','-1','0','0','33','44175','1','0','0','0','0','0','0','0','0','0','Wounded Trainee - On Flash Heal Spellhit (Quest 26919 Credit)');
 -- Yebb Neblegear (14829)
 
 
@@ -29284,8 +29301,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==========================================================
 -- Current Complete Local Text Table for all Accepted Scripts
 -- ==========================================================
--- INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`language`,`comment`,`emote`) VALUES
-
+INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`language`,`comment`,`emote`) VALUES
+('-1','Blackrock take forest!','0','0','0','Common Northshire Orc','0'),
+('-2','Eat you!','0','0','0','Common Northshire Orc','0'),
+('-3','The grapes were VERY TASTY!','0','0','0','Common Northshire Orc','0'),
+('-4','Orc KILL $r!','0','0','0','Common Northshire Orc','0'),
+('-5','We\'ll kill anybody for the right price!','0','0','0','50039','0'),
+('-6','NEW TEXT','0','0','0','50039','0'),
+('-7','NEW TEXT','0','0','0','50039','0'),
+('-8','NEW TEXT','0','0','0','50039','0');
 
 
 -- =======================================================
@@ -29306,7 +29330,7 @@ UPDATE creature_template SET ScriptName= '' WHERE ScriptName= 'generic_creature'
 
 -- Define ACID Full Release Script Creature Entries
 -- ================================================
-UPDATE creature_template SET AIName='EventAI' WHERE entry IN (44548);
+UPDATE creature_template SET AIName='EventAI' WHERE entry IN (42937,42940,44548,44564,49869,49874,50039,50047,50378);
 -- UPDATE creature_template SET AIName='EventAI' WHERE entry IN ();
 
 
