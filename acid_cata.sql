@@ -1,8 +1,8 @@
--- ==============================================================================
--- ====     ACID RELEASE 4.0.0 - FULL RELEASE FOR MANGOS THREE 4.3.4 CLIENT  ====
--- ==============================================================================
+-- ================================================================================
+-- ====     ACID RELEASE 4.0.0 - FULL RELEASE FOR CMANGOS-CATA (4.3.4 CLIENT)  ====
+-- ================================================================================
 
-/* Copyright (C) 2012 - 2012 ACID <http://www.scriptdev2.com/forums/6-ACID-Development>
+/* Copyright (C) 2008 - 2013 ACID <http://www.scriptdev2.com/forums/6-ACID-Development>
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
@@ -1539,7 +1539,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gray Forest Wolf (1922)
 -- Gruff Swiftbite (100)
 -- Guard Roberts (12423)
--- Gug Fatcandle (62)
+-- Gug Fatcandle
+('6201','62','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Gug Fatcandle - Prevent Combat Movement on Spawn'),
+('6202','62','1','0','100','1','1000','1000','1800000','1800000','11','12544','0','1','0','0','0','0','0','0','0','0','Gug Fatcandle - Cast Frost Armor on Spawn'),
+('6203','62','4','0','100','0','0','0','0','0','11','20793','1','0','23','1','0','0','0','0','0','0','Gug Fatcandle - Cast Fireball and Set Phase 1 on Aggro'),
+('6204','62','9','5','100','1','0','40','1500','3000','11','20793','1','0','0','0','0','0','0','0','0','0','Gug Fatcandle - Cast Fireball (Phase 1)'),
+('6205','62','3','5','100','0','15','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Gug Fatcandle - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
+('6206','62','9','5','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Gug Fatcandle - Start Combat Movement at 35 Yards (Phase 1)'),
+('6207','62','9','5','100','0','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Gug Fatcandle - Prevent Combat Movement at 15 Yards (Phase 1)'),
+('6208','62','9','5','100','0','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Gug Fatcandle - Start Combat Movement Below 5 Yards'),
+('6209','62','3','3','100','1','100','30','100','100','23','-1','0','0','0','0','0','0','0','0','0','0','Gug Fatcandle - Set Phase 1 when Mana is above 30% (Phase 2)'),
+('6210','62','27','0','100','1','12544','1','15000','30000','11','12544','0','1','0','0','0','0','0','0','0','0','Gug Fatcandle - Cast Frost Armor on Missing Buff'),
+('6211','62','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Gug Fatcandle - Set Phase to 0 on Evade'),
 -- Helene Peltskinner (6306)
 -- Henze Faulk (6172)
 -- Herbalist Pomeroy (1218)
@@ -1742,7 +1753,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sylannia (14844)
 -- Theocritus (313)
 -- Wounded Trainee
-('4456401','44564','8','0','100','0','2061','-1','0','0','33','44175','1','0','0','0','0','0','0','0','0','0','Wounded Trainee - On Flash Heal Spellhit (Quest 26919 Credit)');
+('4456401','44564','11','0','100','0','0','0','0','0','11','46577','0','1','0','0','0','0','0','0','0','0','Wounded Trainee - Cast Wounded on Spawn'),
+('4456402','44564','8','0','100','0','2061','-1','0','0','33','44175','1','0','0','0','0','0','0','0','0','0','Wounded Trainee - On Flash Heal Spellhit (Quest 26919 Credit)');
 -- Yebb Neblegear (14829)
 
 
