@@ -9021,6 +9021,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bleakheart Hellcaller (3771)
 -- Bleakheart Satyr (3765)
 -- Bleakheart Shadowstalker (3770)
+
 -- Bleakheart Trickster (3767)
 -- Blink Dragon (3815)
 -- Boog the \"Gear Whisperer\" (40799)
