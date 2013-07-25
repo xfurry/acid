@@ -9021,7 +9021,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bleakheart Hellcaller (3771)
 -- Bleakheart Satyr (3765)
 -- Bleakheart Shadowstalker (3770)
-
 -- Bleakheart Trickster (3767)
 -- Blink Dragon (3815)
 -- Boog the \"Gear Whisperer\" (40799)
@@ -23278,11 +23277,34 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =====================
 -- |   The Maelstrom   |
 -- =====================
--- INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
+INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
 
 -- ===============
 -- Darkmoon Island
 -- ===============
+-- Selina Dourman
+('1044501','10445','10','0','90','33','1','15','10000','15000','1','-10','-11','-12','5','70','0','0','5','70','0','0','Selina Dourman - Say and Wave Emote on 15 Yards LOS'),
+-- Rinling
+('1484101','14841','10','0','90','33','1','15','15000','30000','1','-19','-20','-21','1','-22','-23','-24','1','-25','-26','-19','Rinling - Say and Wave Emote on 15 Yards LOS'),
+-- Sylannia
+('1484401','14844','10','0','85','33','1','15','60000','180000','1','-34','-35','-36','1','-37','-38','-39','1','-34','-36','-38','Sylannia - Say on 15 Yards LOS'),
+-- Stamp Thunderhorn
+('1484501','14845','10','0','85','1','1','20','60000','180000','1','-31','-32','-33','0','0','0','0','0','0','0','0','Stamp Thunderhorn - Say on 20 Yards LOS'),
+-- Professor Thaddeus Paleo
+('1484701','14847','10','0','90','1','1','15','30000','120000','1','-16','-17','-18','0','0','0','0','0','0','0','0','Professor Thaddeus Paleo - Say on 15 Yards LOS'),
+-- Jessica Rogers
+('5448501','54485','10','0','90','33','1','15','15000','30000','1','-40','-41','-42','1','-43','-40','-41','5','70','0','0','Finlay Coolshot - Say and Wave Emote on 15 Yards LOS'),
+-- Finlay Coolshot
+('5460501','54605','10','0','90','33','1','15','15000','30000','1','-27','-28','-29','1','-30','-27','-28','5','70','0','0','Finlay Coolshot - Say and Wave Emote on 15 Yards LOS'),
+-- Zina Sharpworth
+('5526601','55266','10','0','90','33','1','15','10000','15000','1','-13','-14','-15','5','70','0','0','5','70','0','0','Zina Sharpworth - Say and Wave Emote on 15 Yards LOS'),
+-- [DND] Darkmoon Faire Whack-a-Gnoll Bunny
+-- ('5857001','58570','16','0','100','1','101994','17','1000','1000','11','110966','6','1','1','-9','0','0','0','0','0','0','[DND] Darkmoon Faire Whack-a-Gnoll Bunny - Cast Stay Out! and Whisper at 17 Yards Range');
+('5857001','58570','10','0','100','1','1','17','1000','1000','11','110966','6','1','1','-9','0','0','0','0','0','0','[DND] Darkmoon Faire Whack-a-Gnoll Bunny - Cast Stay Out! and Whisper at 17 Yards Range');
+
+
+
+
 -- Aja (55268)
 -- Alliance Citizen (55347)
 -- Arakkoa Visitor (55181)
@@ -23328,7 +23350,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Enemy MiniZep (54643)
 -- Enemy Tonk (54642)
 -- Felinni (14865)
--- Finlay Coolshot (54605)
 -- Fire Eater (55231)
 -- Fire Eater (55230)
 -- Fire Eater (55229)
@@ -23354,7 +23375,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Injured Carnie (54518)
 -- Jadaar (55735)
 -- Jerrica (55269)
--- Jessica Rogers (54485)
 -- Jubjub (14867)
 -- Jumbina (55429)
 -- Jumbo (55118)
@@ -23388,19 +23408,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Pack Mule (16225)
 -- Phillipe (55761)
 -- Poot (55247)
--- Professor Thaddeus Paleo (14847)
 -- Pygmy Cockatrice (55119)
 -- Queen Savannah (55446)
 -- Raan (54596)
 -- Ram Master Ray (55724)
 -- Randy (55253)
--- Rinling (14841)
 -- Rona Greenteeth (56041)
 -- Samuro (23625)
 -- Sayge (14822)
 -- Sazz Coincatcher (55264)
 -- Sea Gull (55749)
--- Selina Dourman (10445)
 -- Shana (55271)
 -- Shingo (55603)
 -- Sig Nicious (23626)
@@ -23408,9 +23425,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sithera Wellspun (56053)
 -- Spirit Healer (6491)
 -- Sraaz (55718)
--- Stamp Thunderhorn (14845)
 -- Steven Stagnaro (56068)
--- Sylannia (14844)
 -- Tatia Brine (56069)
 -- Teleportologist Fozlebub (57850)
 -- Thomas Miller (55719)
@@ -23423,7 +23438,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Wildhammer Fact Checker (55720)
 -- Yebb Neblegear (14829)
 -- Zazla (56052)
--- Zina Sharpworth (55266)
+
 
 
 
@@ -29322,7 +29337,48 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-5','We\'ll kill anybody for the right price!','0','0','0','50039','0'),
 ('-6','NEW TEXT','0','0','0','50039','0'),
 ('-7','NEW TEXT','0','0','0','50039','0'),
-('-8','NEW TEXT','0','0','0','50039','0');
+('-8','NEW TEXT','0','0','0','50039','0'),
+('-9','Please stay out of the gaming area.','0','5','0','54601','0'),
+('-10','Welcome!','0','0','0','10445','70'),
+('-11','Welcome to the Darkmoon Faire, $c!','0','0','0','10445','70'),
+('-12','Welcome to the Darkmoon Faire!','0','0','0','10445','70'),
+('-13','Game tokens for sale!  Come get your game tokens!','0','0','0','55266','70'),
+('-14','You\'ll need game tokens to play the games.  Come and get your game tokens!','0','0','0','55266','70'),
+('-15','Step right up and get your game tokens!','0','0','0','55266','70'),
+('-16','Welcome one and all to the greatest show on all of Azeroth... the Darkmoon Faire!  Adventure and excitement await, don\'t be shy!  Mysteries and prizes for both the young and the old are here for the taking.  And be sure to speak with the professor about any Darkmoon Cards that you have come across during your travels!','0','0','0','14847','0'),
+('-17','Darkmoon decks! Turn them in here!','0','0','0','14847','0'),
+('-18','Come speak with me if you have any Darkmoon Faire Cards.','0','0','0','14847','0'),
+('-19','Test your aim!  Test your aim!','0','0','0','14841','70'),
+('-20','If you can shoot, you can score some sweet prizes!','0','0','0','14841','70'),
+('-21','Step right up and take your best shot!','0','0','0','14841','70'),
+('-22','Guns, guns, guns!  C\'mon, pal!','0','0','0','14841','70'),
+('-23','Folks, I''m handing out epics over here!  Don''t miss out!','0','0','0','14841','70'),
+('-24','Shoot for loot!  Who wants to shoot for some loot?','0','0','0','14841','70'),
+('-25','Come play a game so simple that even a $c can do it!','0','0','0','14841','70'),
+('-26','Test your skill, win a prize!','0','0','0','14841','70'),
+('-27','Step right up and try a tonk!','0','0','0','54605','70'),
+('-28','Hey, hey!  Command a tonk in glorious battle!','0','0','0','54605','70'),
+('-29','We\'re under attack!  Step up and do your part, $c!','0','0','0','54605','70'),
+('-30','Tonks!  We got tonks here!','0','0','0','54605','70'),
+('-31','You\'ve got money and we\'ve got food.  What are you waiting for?!','0','0','0','14845','0'),
+('-32','For a limited time only, crunchy frog available exclusively here at the Darkmoon Faire.','0','0','0','14845','0'),
+('-33','Darkmoon Dogs fresh off the grill.  Come and get \'em while they\'re hot!','0','0','0','14845','0'),
+('-34','Don\'t be shy, buy a round for everyone!','0','0','0','54605','70'),
+('-35','Tips are always graciously accepted, friend.','0','0','0','54605','70'),
+('-36','Cheap Beer! Get your Cheap Beer right here!','0','0','0','54605','70'),
+('-37','You there! Yes you! You look thirsty. Get over here, I have just what you need!','0','0','0','14845','0'),
+('-38','Tasty drinks for sale! Quench your thirst on some of the Darkmoon Faire\'s finest brews!','0','0','0','14845','0'),
+('-39','Just in... another batch of Darkmoon Special Reserve. Come get yours before they\'re all gone!','0','0','0','14845','0'),
+('-40','Simple game, for simple folk.  Think you can manage it?','0','0','0','54485','70'),
+('-41','Toss a ring, win a prize!','0','0','0','54485','70'),
+('-42','You look like you\'ve got quite the arm there.  Care to give this game a try?','0','0','0','54485','70'),
+('-43','Hey, hey $c!  Think you can land a ring on a slow moving turtle?','0','0','0','54485','70');
+
+
+
+
+
+
 
 
 -- =======================================================
@@ -29343,7 +29399,7 @@ UPDATE creature_template SET ScriptName= '' WHERE ScriptName= 'generic_creature'
 
 -- Define ACID Full Release Script Creature Entries
 -- ================================================
-UPDATE creature_template SET AIName='EventAI' WHERE entry IN (42937,42940,44548,44564,49869,49874,50039,50047,50378);
+UPDATE creature_template SET AIName='EventAI' WHERE entry IN (10445,14841,14844,14845,14847,42937,42940,44548,44564,49869,49874,50039,50047,50378,54485,54605,55266,58570);
 -- UPDATE creature_template SET AIName='EventAI' WHERE entry IN ();
 
 
